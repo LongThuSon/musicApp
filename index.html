@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZingMP3</title>
+    <link rel="stylesheet" href="./assets/css/style.css" class="css">
+    <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
+</head>
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <div class="sidebar-logo">
+                <img src="./assets/img/logo/logo.png" alt="ZingMP3" class="zing-logo">
+            </div>
+            <div class="sidebar-list">
+                <ul class="sidebar-list-up">
+                    <li><a href=""><i class="personal ti-menu-alt"></i>Cá nhân</a></li>
+                    <li><a href=""><i class="discover ti-menu-alt"></i>Khám phá</a></li>
+                    <li><a href=""><i class="radio ti-menu-alt"></i>Radio</a></li>
+                    <li><a href=""><i class="newsongs ti-menu-alt"></i>Nhạc mới</a></li>
+                    <li><a href=""><i class="top ti-menu-alt"></i>Top 100</a></li>
+                </ul>
+                <hr class="separator">
+                <ul class="sidebar-list-down">
+                    <li><a href="#"><i class="sidebar-playlist ti-menu-alt"></i>Playlist</a></li>
+                    <li><a href=""><i class="category ti-menu-alt"></i>Thể loại</a></li>
+                    <li><a href=""><i class="album ti-menu-alt"></i>Album</a></li>
+                    <li><a href=""><i class="mv ti-menu-alt"></i>MV</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="header">
+            <div class="header-container">
+                <div class="left-right">
+                    <i class="left ti-arrow-left"></i>
+                    <i class="right ti-arrow-right"></i>
+                </div>
+                <div class="header-search">
+                    <i class="icon-search ti-search"></i>
+                    Nhập tên bài hát, nghệ sĩ hoặc MV,...
+                </div>
+            </div>
+            
+        </div>
+        <div class="content">
+            <div class="width-full">
+                <div class="content-left width-half">
+                    <header>
+                        <h4>Now playing:</h4>
+                        <h2>String 57th & 9th</h2>
+                    </header>
+                    <div class="cd">
+                        <div class="cd-thumb">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="playlist width-half">
+                </div>
+            </div>
+        </div>
+        <div class="music">
+            <div class="control">
+                <div class="btn btn-repeat">
+                <i class="ti-loop"></i>
+                </div>
+                <div class="btn btn-prev">
+                <i class="ti-angle-left"></i>
+                </div>
+                <div class="btn btn-toggle-play">
+                <i class="ti-control-pause icon-pause"></i>
+                <i class="ti-control-play icon-play"></i>
+                </div>
+                <div class="btn btn-next">
+                <i class="ti-angle-right"></i>
+                </div>
+                <div class="btn btn-random">
+                <i class="ti-control-shuffle"></i>
+                </div>
+            </div>
+    
+            <div class="update">
+                <h4>00:00</h4>
+                <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100">
+                <h4 id="end-time" preload="metadata">00:00</h4>
+            </div>
+            
+            <div class="volume">
+                <i class="icon-volume ti-volume"></i>
+                <input id="progress-volume" class="progress-volume" type="range" value="0" step="1" min="0" max="100">
+            </div>
+
+            <audio id="audio" src=""></audio>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+    
+</body>
+</html>
